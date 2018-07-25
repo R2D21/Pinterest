@@ -4,7 +4,7 @@
 ---
 
 <h1 id="the-hacking-pinterest">The Hacking Pinterest</h1>
-<p>Création d’un un site où les utilisateurs peuvent créer des “pins”. Chauqe pin contient une URL d’une image sur le net. Les utilisateurs peuvent commenter les pins, mais ne peuvent pas commenter les commentaires.</p>
+<p>Création d’un un site où les utilisateurs peuvent créer des “pins”. Chaque pin contient une URL d’une image sur le net. Les utilisateurs peuvent commenter les pins, mais ne peuvent pas commenter les commentaires.</p>
 <p>Tu as besoin de :</p>
 <ul>
 <li><code>ActiveRecord</code></li>
