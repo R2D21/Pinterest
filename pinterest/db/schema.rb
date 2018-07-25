@@ -10,20 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_25_193136) do
+ActiveRecord::Schema.define(version: 2018_07_25_232053) do
 
   create_table "comments", force: :cascade do |t|
-    t.string "comment"
+    t.integer "pin_id"
+    t.integer "user_id"
+    t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["pin_id"], name: "index_comments_on_pin_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "pins", force: :cascade do |t|
+    t.integer "user_id"
     t.string "url_img"
-    t.integer "comment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["comment_id"], name: "index_pins_on_comment_id"
+    t.index ["user_id"], name: "index_pins_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

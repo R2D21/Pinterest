@@ -1,3 +1,4 @@
 class Comment < ApplicationRecord
-  has_many :pins
+  belongs_to :user
+  belongs_to :pin
 end
