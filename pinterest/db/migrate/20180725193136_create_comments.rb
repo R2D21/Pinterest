@@ -1,3 +1,4 @@
+# Crée la table comments et une relation avecc pins et users
 class CreateComments < ActiveRecord::Migration[5.2]
   def change
     create_table :comments do |t|

@@ -1,3 +1,4 @@
+# Crée la table pins et une relation avec users
 class CreatePins < ActiveRecord::Migration[5.2]
   def change
     create_table :pins do |t|
