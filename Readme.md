@@ -13,7 +13,7 @@
 <h2 id="a-toi-de-jouer">A toi de jouer</h2>
 <ul>
 <li>$ bundle install</li>
-<li>bin/rails db:environment:set RAILS_ENV=development && rails db:drop && rails db:create && rails db:migrate && rails db:seed && rails c
+<li>$ bin/rails db:environment:set RAILS_ENV=development && rails db:drop && rails db:create && rails db:migrate && rails db:seed && rails c
 </ul>
 <h2 id="réalisé-avec-amour-par-la-team-five">Réalisé avec amour par la team Five:</h2>
 <p><a href="https://github.com/R2D21">Rémi Boivin </a><br>
